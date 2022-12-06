@@ -3,12 +3,12 @@
 #include <stdio.h>
 int main()
 {
-	float num1=0, num2=0, out=0;  //as the numbers that user gives and output
-	char op;                     //as operation
-	int con;                     //whether user wants to continue or not
+float num1=0, num2=0, out=0;  //as the numbers that user gives and output
+char op;                     //as operation
+int con;                     //whether user wants to continue or not
 	
-	do
-	{
+do
+{
 
 	printf("Enter two floating point numbers: ");
 	scanf("%f%f",&num1,&num2);
@@ -29,13 +29,13 @@ int main()
 		 break;
 		 
 		 
-    case '*':
+    	case '*':
     	 out=num1*num2;
     	 printf("%.2f * %.2f = %.2f\n",num1,num1,out);
     	 break;
     	 
     	 
-    case '/':
+    	case '/':
     	 out=num1/num2;
     	 printf("%.2f / %.2f = %.2f\n",num1,num1,out);
     	 break;
@@ -48,8 +48,10 @@ int main()
 	printf("Do you want to continue?\n");
 	scanf("%d",&con);
 	   
-    }
-	while (con!=0 && con==1);
-	printf("The program is terminated.\n");
-	return 0;
+}
+while (con!=0 && con==1);
+
+printf("The program is terminated.\n");
+
+return 0;
 }
